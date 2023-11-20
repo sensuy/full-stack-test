@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": false,
+    "allowJs": true,
+    "paths": {
+      "@auth/modules/*": [
+        "apps/auth/src/modules/*"
+      ],
+      "@auth/config/*": [
+        "apps/auth/src/config/*"
+      ],
+      "@auth/providers/*": [
+        "apps/auth/src/providers/*"
+      ],
+      "@franchise/modules/*": [
+        "apps/franchise/src/modules/*"
+      ],
+      "@franchise/config/*": [
+        "apps/franchise/src/config/*"
+      ],
+      "@franchise/providers/*": [
+        "apps/franchise/src/providers/*"
+      ],
+      "@school/modules/*": [
+        "apps/school/src/modules/*"
+      ],
+      "@school/config/*": [
+        "apps/school/src/config/*"
+      ],
+      "@school/providers/*": [
+        "apps/school/src/providers/*"
+      ],
+      "@app/shared/*": [
+        "libs/shared/src/*"
+      ]
+    }
+  }
+}

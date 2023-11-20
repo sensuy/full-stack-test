@@ -1,0 +1,21 @@
+{   
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@auth/modules/(.*)$": "<rootDir>/apps/auth/src/modules/$1",
+    "@auth/config/(.*)$": "<rootDir>/apps/auth/src/config/$1",
+    "@auth/providers/(.*)$": "<rootDir>/apps/auth/src/providers/$1",
+    "@franchise/modules/(.*)$": "<rootDir>/apps/franchise/src/modules/$1",
+    "@franchise/config/(.*)$": "<rootDir>/apps/franchise/src/config/$1",
+    "@franchise/providers/(.*)$": "<rootDir>/apps/franchise/src/providers/$1",
+    "@school/modules/(.*)$": "<rootDir>/apps/school/src/modules/$1",
+    "@school/config/(.*)$": "<rootDir>/apps/school/src/config/$1",
+    "@school/providers/(.*)$": "<rootDir>/apps/school/src/providers/$1",
+    "@app/shared/(.*)$": "<rootDir>/libs/shared/src/$1"
+  }
+}

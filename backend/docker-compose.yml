@@ -1,0 +1,35 @@
+
+services:
+  auth:
+    container_name: auth
+    build:
+      context: .
+      dockerfile: ./apps/auth/Dockerfile
+    entrypoint: wait-for auth_db:5432 -t 40  -- ./apps/auth/start.sh
+    env_file:
+      - ./apps/auth/.env.development
+    ports:
+      - "3000:3000"
+    depends_on:
+      - auth_db
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  auth_db:
+    container_name: auth_db
+    image: postgres:15
+    restart: no
+    ports:
+      - "5432:5432"
+    env_file:
+      - apps/auth/.env.development
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - auth_db_data:/var/lib/postgresql/data
+
+volumes:
+  auth_db_data:
