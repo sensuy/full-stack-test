@@ -10,7 +10,7 @@ docker compose up
 http://localhost:3000/api
 ```
 
-## frontend
+## mobile
 - Instalar o `expo go` no dispositivo android.
 - Entrar no folder mobile e instalar as dependencias usando o comando:
 ```
