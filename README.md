@@ -21,3 +21,7 @@ npm install
 npm run start
 ```
 - Leia o QRcode com o aplicativo android expo go.
+
+
+### PS: Para fins de comodidade os arquivos .env foram excluídos do .gitignore.
+
