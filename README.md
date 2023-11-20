@@ -9,5 +9,5 @@ http://localhost:3000/api
 ```
 
 ## frontend
-- Instalar o expo go no dispositivo android.
-- Entrar no folder mobile e instalar as dependencias usando o comando npm install e ap
+- Instalar o `expo go` no dispositivo android.
+- Entrar no folder mobile e instalar as dependencias usando o comando npm install,
